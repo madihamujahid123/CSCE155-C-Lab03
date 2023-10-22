@@ -53,13 +53,30 @@ int main(int argc, char **argv) {
     printf("%f", result); 
     }
   } 
-  else (choice == 5) {
-    
-  } else if(choice == 6) {
-    //TODO: handle this case (log_a(b))
-  } else {
+  else 
+  {
+    printf(" Error divisor is less then 1 \n");
+  }
+  else if (choice == 5) 
+  {
+    if (a>b)
+    {
+      result = b;
+    printf("%f", result);
+    }
+    else
+    {
+      result = a;
+    printf("%f", result);
+    }
+  }
+  else if(choice == 6)
+   { 
+    result = log(b)/log(a);
+    printf("%f", result);
+  } 
+  else {
     printf("Please input a valid operator next time");
   }
-
   return 0;
 }
